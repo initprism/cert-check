@@ -1,0 +1,12 @@
+[package]
+name                    = "cert-check"
+version                 = "0.1.0"
+edition                 = "2021"
+
+[dependencies]
+rustls                  = { version = "0.18" }
+webpki-roots            = { version = "0.20" }
+webpki                  = { version = "0.21" }
+x509-parser             = { version = "0.8" }
+chrono                  = { version = "0.4", features = [ "serde" ] }
+serde                   = { version = "1.0", features = [ "derive" ] }
